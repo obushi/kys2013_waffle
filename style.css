@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url(./bg.png);
+  font-family: ".HiraKakuInterface-W2", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  text-shadow: 2px 2px 1px rgba(242, 153, 198, 0.4);
+  color: rgba(22, 22, 22, 1.0);
+}
+
+h1 {
+  margin: 0 auto 10px auto;
+}
+
+h2 {
+  margin: 20px auto;
+  clear: both;
+}
+
+div#wrapper {
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+div#logo,
+div#title,
+div#menu,
+div.product,
+div#tweet {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+div#logo {
+  height: 200px;
+  background-image: url(./logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#logo > img {
+  width: 100%;
+}
+
+div#menu {
+  padding-bottom: 60px;
+}
+
+div#menu-waffle,
+div#menu-topping {
+  border-style: solid;
+  border-color: rgba(228, 0, 117, 0.3);
+  border-radius: 20px;
+  border-width: 2px;
+}
+
+div.product {
+  height: 100px;
+  margin: 12px auto 12px auto;
+}
+
+img.thumb {
+  width: 100px;
+  height: 100px;
+  float: right;
+  height: 100%;
+}
+
+p.product_name {
+  width: 170px;
+  font-size: 1.5em;
+  float: left;
+  line-height: 100px;
+  padding-left: 0;
+}
+
+p.product_name:after {
+  clear: both;
+}
+
+div#footer {
+  width: 100%;
+  height: 34px;
+  padding: 10px 0 0 0;
+  position: fixed;
+  background-color: rgba(230, 32, 134, 0.3);
+  border-top-color: rgba(247, 228, 226, 1.0);
+  border-top-width: 2px;
+  border-top-style: solid;
+  bottom: 0;
+  left: 0;
+}
+
+div#tweet > iframe {
+  float: left;
+}
+
+div#footer > p {
+  display: none;
+  float: right;
+  width: 150px;
+}
+
+div#notice {
+  float: left;
+}
+
+@media screen and (min-width: 900px) {
+  div#logo,
+  div#title,
+  div#menu,
+  div#tweet {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .sp_hide {
+    display: none;
+    }
+  div#logo {
+    height: 150px;
+  }
+  div#footer > p {
+    display: inline;
+    float: right;
+  }
+  div.product {
+    height: 50px;
+  }
+  img.thumb {
+    width: 50px;
+    height: 50px;
+  }
+  p.product_name {
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    text-align: center;
+  }
+  div#logo {
+    height: 100px;
+  }
+  h2 {
+    display: inline-block;
+  }
+  div#menu-waffle,
+  div#menu-topping {
+     text-align: left;
+  }
+  div#footer > p {
+    display: inline;
+    font-size: 0.8em;
+  }
+  p.product_name {
+    font-size: 1.2em;
+    width: 130px;
+  }
+}

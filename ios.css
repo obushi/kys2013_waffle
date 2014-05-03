@@ -1,0 +1,111 @@
+body {
+  -webkit-animation: animateBg 10s ease-in 0s infinite normal;
+}
+
+@-webkit-keyframes animateBg {
+    0% {
+        background-image: url(./bg.png);
+        text-shadow: 2px 2px 1px rgba(242, 153, 198, 0.4);
+    }
+    20% {
+        background-image: url(./bg_r.png);
+        text-shadow: 2px 2px 1px rgba(220, 0, 57, 0.5);
+    }
+    40% {
+        background-image: url(./bg_v.png);
+        text-shadow: 2px 2px 1px rgba(156, 39, 184, 0.3);
+    }
+    60% {
+        background-image: url(./bg_y.png);
+        text-shadow: 2px 2px 1px rgba(222, 196, 13, 0.3);
+    }
+    80% {
+        background-image: url(./bg_g.png);
+        text-shadow: 2px 2px 1px rgba(34, 253, 118, 0.3);
+    }
+    100% {
+        background-image: url(./bg.png);
+        text-shadow: 2px 2px 1px rgba(228, 0, 117, 0.3);
+    }
+}
+div#logo {
+  -webkit-animation: animateLogo 10s ease-in 0s infinite normal;
+}
+
+@-webkit-keyframes animateLogo {
+    0% {
+        background-image: url(./logo.png);
+    }
+    20% {
+        background-image: url(./logo_r.png);
+    }
+    40% {
+        background-image: url(./logo_v.png);
+    }
+    60% {
+        background-image: url(./logo_y.png);
+    }
+    80% {
+        background-image: url(./logo_g.png);
+    }
+    100% {
+        background-image: url(./logo.png);
+    }
+}
+
+div#menu-waffle,
+div#menu-topping {
+  -webkit-animation: animateBorder 10s ease-in 0s infinite normal;
+}
+
+@-webkit-keyframes animateBorder {
+    0% {
+        border-color: rgba(228, 0, 117, 0.3);
+    }
+    20% {
+        border-color: rgba(220, 0, 57, 0.5);
+    }
+    40% {
+        border-color: rgba(156, 39, 184, 0.3);
+    }
+    60% {
+        border-color: rgba(222, 196, 13, 0.3);
+    }
+    80% {
+        border-color: rgba(34, 253, 118, 0.3);
+    }
+    100% {
+        border-color: rgba(228, 0, 117, 0.3);
+    }
+}
+
+div#footer {
+  -webkit-animation: animateFooter 10s ease-in 0s infinite normal;
+}
+
+@-webkit-keyframes animateFooter {
+    0% {
+        background-color: rgba(228, 0, 117, 0.3);
+        border-top-color: rgba(228, 0, 117, 0.1);
+    }
+    20% {
+        background-color: rgba(220, 0, 57, 0.5);
+        border-top-color: rgba(220, 0, 57, 0.1);
+    }
+    40% {
+        background-color: rgba(156, 39, 184, 0.3);
+        border-top-color: rgba(156, 39, 184, 0.1);
+    }
+    60% {
+        background-color: rgba(222, 196, 13, 0.3);
+        border-top-color: rgba(222, 196, 13, 0.1);
+    }
+    80% {
+        background-color: rgba(34, 253, 118, 0.3);
+        border-top-color: rgba(34, 253, 118, 0.1);
+    }
+    100% {
+        background-color: rgba(228, 0, 117, 0.3);
+        border-top-color: rgba(228, 0, 117, 0.1);
+    }
+}
